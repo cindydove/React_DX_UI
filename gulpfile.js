@@ -45,8 +45,14 @@ function compileESM() {
 // 串行执行编译脚本任务（cjs,esm） 避免环境变量影响
 const buildScripts = gulp.series(compileCJS, compileESM);
 
-// 整体并行执行任务
-const build = gulp.parallel(buildScripts);
+/**
+ * 拷贝less文件
+ */
+function copyLess() {
+  return gulp.src(paths.styles).pipe(gulp.dest(paths.dest.lib)).pipe(gulp.dest(paths.dest.esm));
+}
+
+const build = gulp.parallel(buildScripts, copyLess);
 
 exports.build = build;
 
