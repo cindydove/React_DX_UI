@@ -19,6 +19,10 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
+  "files": [
+    "lib",
+    "esm"
+  ],
   "scripts": {
     "commit": "git-cz",
     "dev": "dumi dev",
