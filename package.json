@@ -40,6 +40,7 @@
   },
   "devDependencies": {
     "@umijs/fabric": "^2.10.0",
+    "cpr": "^3.0.1",
     "husky": "^7.0.4",
     "lint-staged": "^12.1.5",
     "prettier": "^2.5.1"
