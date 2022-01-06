@@ -1,5 +1,5 @@
 {
-  "name": "DX_UI",
+  "name": "@cindydove/react_dx_ui",
   "version": "1.0.0",
   "description": "A react UI",
   "module": "esm/index.js",
