@@ -2,6 +2,7 @@
   "name": "DX_UI",
   "version": "1.0.0",
   "description": "",
+  "module": "esm/index.js",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
