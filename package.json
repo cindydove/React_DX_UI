@@ -1,6 +1,6 @@
 {
   "name": "@cindydove/react_dx_ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react UI",
   "module": "esm/index.js",
   "main": "lib/index.js",
@@ -14,7 +14,6 @@
     "url": "git+https://github.com/cindydove/React_DX_UI.git"
   },
   "typings": "lib/index.d.ts",
-
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
