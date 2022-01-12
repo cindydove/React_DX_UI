@@ -37,12 +37,6 @@
     "test:update": "jest --updateSnapshot",
     "release": "np --no-cleanup --no-tests --any-branch"
   },
-  "sideEffects": [
-    "dist/*",
-    "esm/**/style/*",
-    "lib/**/style/*",
-    "*.less"
-  ],
   "keywords": [],
   "author": "",
   "license": "ISC",
