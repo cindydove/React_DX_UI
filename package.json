@@ -1,6 +1,6 @@
 {
   "name": "@cindydove/react_dx_ui",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A react UI",
   "module": "esm/index.js",
   "main": "lib/index.js",
@@ -14,7 +14,6 @@
     "url": "git+https://github.com/cindydove/React_DX_UI.git"
   },
   "typings": "lib/index.d.ts",
-
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
@@ -26,6 +25,7 @@
   "scripts": {
     "commit": "git-cz",
     "dev": "dumi dev",
+    "start": "npm run dev",
     "build:site": "rimraf doc-site && dumi build",
     "preview:site": "cross-env SITE_BUILD_ENV=PREVIEW npm run build:site && serve doc-site",
     "deploy:site": "npm run build:site && gh-pages -d doc-site",
@@ -36,14 +36,10 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:update": "jest --updateSnapshot",
-    "release": "np --no-cleanup --no-tests --any-branch"
+    "release": "np --no-cleanup --no-tests --any-branch",
+    "new": "plop --plopfile ./scripts/plopfile.js"
   },
-  "sideEffects": [
-    "dist/*",
-    "esm/**/style/*",
-    "lib/**/style/*",
-    "*.less"
-  ],
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -106,12 +102,14 @@
     "jest": "^27.4.7",
     "lint-staged": "^12.1.5",
     "np": "^7.6.0",
+    "plop": "^3.0.5",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "serve": "^13.0.2",
     "through2": "^4.0.2",
-    "ts-jest": "^27.1.2"
+    "ts-jest": "^27.1.2",
+    "ts-node": "^8.10.1"
   },
   "dependencies": {
     "@babel/runtime": "^7.16.7",
