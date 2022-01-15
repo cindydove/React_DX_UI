@@ -9,14 +9,15 @@ function GenerateFormItem<Search>(
   config: FormFieldConfig<Search>[]
 ): React.ReactNode {
     const renderField = (f: FormFieldConfig<Search>) => {
+        const label = f.label || ''
         switch (f.component) {
             case 'input':
-                return <Input placeholder={`请输入${f.label}`} {...f.props} />;
+                return <Input placeholder={`请输入${label}`} {...f.props} />;
             case 'inputNumber':
                 return <InputNumber {...f.props} />;
             case 'select':
                 return (
-                  <Select placeholder={`请选择${f.label}`} {...f.props}>
+                  <Select placeholder={`请选择${label}`} {...f.props}>
                       {f.hasAll && (
                         <Option key="" value="">
                             全部
@@ -38,7 +39,7 @@ function GenerateFormItem<Search>(
             case 'transfer':
                 return <Transfer dataSource={f.options} render={(item) => item.title || ''} {...f.props} />;
             case 'date':
-                return <DatePicker placeholder={`请选择${f.label}`} {...f.props} />;
+                return <DatePicker placeholder={`请选择${label}`} {...f.props} />;
             case 'range':
                 return <RangePicker {...f.props} />;
             case 'custom':

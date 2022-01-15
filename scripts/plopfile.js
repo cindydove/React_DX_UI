@@ -31,7 +31,7 @@ export default function (plop) {
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, './src/{{name}}/index.md'),
+        path: path.resolve(__dirname, './src/{{name}}/alert.md'),
         templateFile: path.resolve(__dirname, './templates/component/doc.hbs'),
       },
       {

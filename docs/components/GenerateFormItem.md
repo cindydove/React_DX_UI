@@ -1,8 +1,8 @@
 ---
-name: GenerateFormItem 
-route: /components/generate-form-item
-menu: 组件
+title: GenerateFormItem
+order:2
 ---
+
 
 ## GenerateFormItem 
 
@@ -12,7 +12,7 @@ menu: 组件
 
 #### 基本使用
 
-<CodeBox code={./demo/basic.tsx} title="" desc=""></CodeBox>
+<code src="../../src/GenerateFormItem/demo/basic.tsx"></code>
 
 
 ### API
