@@ -1,10 +1,10 @@
 ---
-name: {{pascalCase name}} {{CN}}
-route: /src/{{pascalCase name}}
-menu: 组件
+title: GenerateFormItem
+order:2
 ---
 
-## {{pascalCase name}} {{CN}}
+
+## GenerateFormItem 
 
 
 
@@ -12,6 +12,7 @@ menu: 组件
 
 #### 基本使用
 
+<code src="../../src/GenerateFormItem/demo/basic.tsx"></code>
 
 
 ### API

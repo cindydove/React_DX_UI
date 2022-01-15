@@ -1,11 +1,6 @@
 ---
 title: Alert 警告提示
-nav:
-  title: 组件
-  order: 2
-group:
-  title: 反馈
-  order: 1
+order:1
 ---
 
 # Alert 警告提示
@@ -16,7 +11,7 @@ group:
 
 ### 基本用法
 
-<code src="./demo/basic.tsx"></code>
+<code src="../../src/alert/demo/basic.tsx"></code>
 
 ## API
 
