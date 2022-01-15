@@ -11,49 +11,49 @@ export default function (plop) {
     actions: [
       {
         type: 'add',
-        path: path.resolve(__dirname, './src/{{name}}/index.ts'),
+        path: path.resolve(__dirname, './src/{{pascalCase name}}/index.ts'),
         templateFile: path.resolve(__dirname, './templates/component/index.hbs'),
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, './src/{{name}}/{{name}}.tsx'),
+        path: path.resolve(__dirname, './src/{{pascalCase name}}/{{pascalCase name}}.tsx'),
         templateFile: path.resolve(__dirname, './templates/component/comp.hbs'),
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, './src/{{name}}/style/index.less'),
+        path: path.resolve(__dirname, './src/{{pascalCase name}}/style/index.less'),
         templateFile: path.resolve(__dirname, './templates/component/style/style.hbs'),
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, './src/{{name}}/style/index.ts'),
+        path: path.resolve(__dirname, './src/{{pascalCase name}}/style/index.ts'),
         templateFile: path.resolve(__dirname, './templates/component/style/index.hbs'),
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, './src/{{name}}/alert.md'),
+        path: path.resolve(__dirname, './docs/components/{{pascalCase name}}.md'),
         templateFile: path.resolve(__dirname, './templates/component/doc.hbs'),
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, './src/{{name}}/interface.ts'),
+        path: path.resolve(__dirname, './src/{{pascalCase name}}/interface.ts'),
         templateFile: path.resolve(__dirname, './templates/component/interface.hbs'),
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, './src/{{name}}/demo/basic.tsx'),
+        path: path.resolve(__dirname, './src/{{pascalCase name}}/demo/basic.tsx'),
         templateFile: path.resolve(__dirname, './templates/component/demo/basic.hbs'),
       },
       {
         type: 'add',
-        path: path.resolve(__dirname, './src/{{name}}/__tests__/index.test.tsx'),
+        path: path.resolve(__dirname, './src/{{pascalCase name}}/__tests__/index.test.tsx'),
         templateFile: path.resolve(__dirname, './templates/component/__tests__/index.test.hbs'),
       },
       {
         type: 'append',
         path: path.resolve(__dirname, './src/index.ts'),
         pattern: '/* PLOP_INJECT_EXPORT */',
-        template: "export { default as {{name}} } from './{{name}}';",
+        template: "export { default as {{pascalCase name}} } from './{{pascalCase name}}';",
       },
     ],
   });
