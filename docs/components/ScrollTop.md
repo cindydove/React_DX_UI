@@ -13,6 +13,16 @@ order:2
 
 <code src="../../src/ScrollTop/demo/basic.tsx"></code>
 
+```tsx
+function App() {
+  return (
+    <Router>
+      <ScrollToTop />
+      <App />
+    </Router>
+  );
+}
+```
 
 ### API
 
