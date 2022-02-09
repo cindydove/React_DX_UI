@@ -39,7 +39,6 @@
     "release": "np --no-cleanup --no-tests --any-branch",
     "new": "plop --plopfile ./scripts/plopfile.js"
   },
-  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
