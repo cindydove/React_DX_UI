@@ -1,6 +1,6 @@
 {
   "name": "@cindydove/react_dx_ui",
-  "version": "1.0.5",
+  "version": "1.0.9",
   "description": "A react UI",
   "module": "esm/index.js",
   "main": "lib/index.js",
@@ -36,10 +36,9 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "test:update": "jest --updateSnapshot",
-    "release": "np --no-cleanup --no-tests --any-branch",
+    "release": "npm run build && np --no-cleanup --no-tests --any-branch",
     "new": "plop --plopfile ./scripts/plopfile.js"
   },
-  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
