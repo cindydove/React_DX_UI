@@ -37,7 +37,7 @@
     "test:coverage": "jest --coverage",
     "test:update": "jest --updateSnapshot",
     "release": "npm run build && np --no-cleanup --no-tests --any-branch",
-    "new": "plop --plopfile ./scripts/plopfile.js"
+    "new": "plop --plopfile ./scripts/plopfile.mjs"
   },
   "keywords": [],
   "author": "",
