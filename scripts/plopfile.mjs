@@ -1,6 +1,7 @@
 "use strict"
 // Node.js 要求 ES6 模块采用.mjs后缀文件名。也就是说，只要脚本文件里面使用import或者export命令，那么就必须采用.mjs后缀名。Node.js 遇到.mjs文件，就认为它是 ES6 模块，默认启用严格模式，不必在每个模块文件顶部指定"use strict"。
 // 如果不希望将后缀名改成.mjs，可以在项目的package.json文件中，指定type字段为module。
+// Node.js v13.2 开始支持ESM
 
 import path from 'path'
 const __dirname = path.resolve(path.dirname(''))
