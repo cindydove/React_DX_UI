@@ -1,11 +1,11 @@
-import React from "react";
-import {Rule} from "rc-field-form/lib/interface";
-import {FormItemProps} from "antd/lib/form/FormItem";
-import {InputProps} from "antd/lib/input";
-import {InputNumberProps} from "antd/lib/input-number";
-import {SelectProps} from "antd/lib/select";
-import {TransferItem, TransferProps} from "antd/lib/transfer";
-import {DatePickerProps, RangePickerProps} from "antd/lib/date-picker";
+import React from 'react';
+import { Rule } from 'rc-field-form/lib/interface';
+import { FormItemProps } from 'antd/lib/form/FormItem';
+import { InputProps } from 'antd/lib/input';
+import { InputNumberProps } from 'antd/lib/input-number';
+import { SelectProps } from 'antd/lib/select';
+import { TransferItem, TransferProps } from 'antd/lib/transfer';
+import { DatePickerProps, RangePickerProps } from 'antd/lib/date-picker';
 
 export interface IBaseField<S> {
   className?: string;
@@ -29,11 +29,11 @@ export interface IInputNumberField<S> extends IBaseField<S> {
 
 // 下拉框属性
 export type ISelectOptions = {
-  key: string | number;
-  value?: string | number;
-  content: string | React.ReactNode;
+  key?: string | number;
+  value: string | number;
+  title?: string | React.ReactNode;
   disabled?: boolean;
-  label?: string | React.ReactNode;
+  label: string | React.ReactNode;
 }[];
 export interface ISelectField<S> extends IBaseField<S> {
   component: 'select';
@@ -74,4 +74,4 @@ export type FormFieldConfig<S> =
   | ICustomField<S>
   | ITransferField<S>
   | IDateField<S>
-  | IRangeField<S>
+  | IRangeField<S>;
